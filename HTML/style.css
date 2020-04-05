@@ -1,25 +1,60 @@
 body {
     background: #f5d9d5;
-    font-family: "Nunito", sans-serif;
+    font-family: 'Merienda', cursive;
     margin: 0;
     padding: 0;
 }
 
 /* NAV */
 
-ul {
+.navbar {
     list-style-type: none;
     margin: 0;
-    padding-top: 18%;
-    width: 13%;
-    background-color: #aec3cf;
+    padding-top: 10%;
+    width: 8%;
+    background-color: transparent;
     height: 100%; 
     position: fixed;
     overflow: auto; 
   }
 
 ul li {
- padding-bottom: 35%;
+    padding-bottom: 40%;
+}
+
+a {
+    color: darkgrey;
+}
+
+/* NAVBAR ICONS */
+
+#onhoverhome {
+    visibility: hidden;
+}
+.home:hover ~ #onhoverhome{
+    visibility: visible;
+}
+
+#onhovercarousel {
+    visibility: hidden;
+}
+.carousel:hover ~ #onhovercarousel{
+    visibility: visible;
+}
+
+#onhoverfcc {
+    visibility: hidden;
+}
+.fcc:hover ~ #onhoverfcc{
+    visibility: visible;
+    
+}
+
+#onhovercodewars {
+    visibility: hidden;
+}
+.codewars:hover ~ #onhovercodewars{
+    visibility: visible;
 }
 
 /* TITLE */
@@ -35,9 +70,11 @@ h1 {
     padding-top: 50px;
     height: 100vh;
     width: 100%;
-    background-image: url("");
+    background-image: url(https://images.pexels.com/photos/509922/pexels-photo-509922.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
     background-size: cover;
+    background-repeat: no-repeat;
     display: table;
+    text-align: center fixed;
     background-attachment: fixed
 }
 

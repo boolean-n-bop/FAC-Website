@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset-UTF-8" />
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700"
-      rel="stylesheet"
-    />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    <!-- Google Font -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">    <!-- Custom CSS -->
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Custom JS -->
     <script src="app.js"></script>
 
     <title>FAC Application</title>
@@ -16,15 +17,27 @@
 
   <body>
 
-    <ul>
-        <li><a href="#first">Moi</a></li>
-        <li><a href="#second">Image Carousel</a></li>
-        <li><a href="#third">FreeCodeCamp</a></li>
-        <li><a href="#fourth">CodeWars</a></li>
-      </ul>
+<!-- Navbar -->
+    <div class="navbar">
+        <ul class="nav">
+            <li class="home"><i class="icon fa fa-home fa-3x"></i><a href="#first"></a>
+            </li>
+            <li id="onhoverhome">Home</li>
+            <li class="carousel"><i class="far fa-images fa-3x"></i><a href="#second"></a>
+            </li>
+            <li id="onhovercarousel">Carousel</li>
+            <li class="fcc"><i class="fas fa-campground fa-3x"></i><a href="#third"></a>
+            </li>
+            <li id="onhoverfcc">FCC</li>
+            <li class="codewars"><i class="fas fa-user-ninja fa-3x"></i><a href="#fourth"></a>
+            </li>
+            <li id="onhovercodewars">Codewars</li>
+        </ul>
+    </div>
 
+<!-- Boxes -->
     <div id="first" class="aboutme">
-        <h1 class="intro">Lettuce Begin</h1>
+        <h1>Take a seat and lettuce begin</h1>
     </div>
 
     <div id="second">
