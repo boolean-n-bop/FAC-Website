@@ -1,5 +1,10 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
-    background: #f5d9d5;
+    background: #353434;
     font-family: 'Merienda', cursive;
     margin: 0;
     padding: 0;
@@ -10,7 +15,7 @@ body {
 .navbar {
     list-style-type: none;
     margin: 0;
-    padding-top: 10%;
+    padding-top: 1%;
     width: 8%;
     background-color: transparent;
     height: 100%; 
@@ -18,8 +23,13 @@ body {
     overflow: auto; 
   }
 
+.nav li {
+  color: rgba(70, 70, 88, 0.541);
+}
+
 ul li {
-    padding-bottom: 40%;
+    list-style-type: none;
+    padding-bottom: 37%;
 }
 
 a {
@@ -33,6 +43,16 @@ a {
 }
 .home:hover ~ #onhoverhome{
     visibility: visible;
+    color: red;
+}
+
+#onhoverabout {
+    visibility: hidden;
+}
+
+.aboutme:hover ~ #onhoverabout {
+    visibility: visible;
+    color: red;
 }
 
 #onhovercarousel {
@@ -40,6 +60,7 @@ a {
 }
 .carousel:hover ~ #onhovercarousel{
     visibility: visible;
+    color: red;
 }
 
 #onhoverfcc {
@@ -47,6 +68,7 @@ a {
 }
 .fcc:hover ~ #onhoverfcc{
     visibility: visible;
+    color: red;
     
 }
 
@@ -55,12 +77,30 @@ a {
 }
 .codewars:hover ~ #onhovercodewars{
     visibility: visible;
+    color: red;
 }
 
-/* TITLE */
+#onhovergit {
+    visibility: hidden;
+}
+
+.github:hover ~ #onhovergit{
+    visibility: visible;
+    color: red;
+}
+
+/* TITLES */
+
+
 
 h1 {
+    font-size: 50px;
+    vertical-align: middle;
+    padding-right: 10%;
     text-align: center;
+    display: table-cell;
+    color: red;
+
 }
 
 /* BOXES */
@@ -70,12 +110,13 @@ h1 {
     padding-top: 50px;
     height: 100vh;
     width: 100%;
-    background-image: url(https://images.pexels.com/photos/509922/pexels-photo-509922.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+    background-image: url(https://images.pexels.com/photos/3318582/pexels-photo-3318582.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-size: cover;
     background-repeat: no-repeat;
     display: table;
     text-align: center fixed;
-    background-attachment: fixed
+    background-attachment: fixed;
+
 }
 
 #second {
@@ -92,7 +133,7 @@ h1 {
     padding-left: 6.5%;
     height: 100vh;
     width: 100%;
-    background-image: url("");
+    background-image: url("https://images.pexels.com/photos/842339/pexels-photo-842339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-size: cover;
     display: table;
     background-attachment: fixed
@@ -102,8 +143,27 @@ h1 {
     padding-left: 6.5%;
     height: 100vh;
     width: 100%;
-    background-image: url("");
+    background-image: url("https://images.pexels.com/photos/416202/pexels-photo-416202.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-size: cover;
     display: table;
     background-attachment: fixed
+}
+
+
+#fifth {
+    padding-left: 6.5%;
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://images.pexels.com/photos/374918/pexels-photo-374918.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    display: table;
+    background-attachment: fixed
+}
+
+#text1 {
+    position: relative;
+    top: 50px;
+    padding-left: 8%;
+    padding-top: 8%;
+   /* padding-left: 10%; */
 }

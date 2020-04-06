@@ -9,48 +9,65 @@
     <link rel="stylesheet" href="style.css" />
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <!-- Custom JS -->
-    <script src="app.js"></script>
-
+      <!-- Custom JS -->
+      <script src="app.js"></script>
     <title>FAC Application</title>
   </head>
 
   <body>
+<!-- Cursor -->
+    <style type="text/css">* {cursor: url(http://cur.cursors-4u.net/holidays/hol-5/hol444.ani), url(http://cur.cursors-4u.net/holidays/hol-5/hol444.gif), auto !important;}</style><a href="http://www.cursors-4u.com/cursor/2011/12/17/santa-hat-ice-cream.html" target="_blank" title="Sparkly Santa Hat Ice Cream"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Sparkly Santa Hat Ice Cream" style="position:absolute; top: 0px; right: 0px;" /></a>
 
 <!-- Navbar -->
     <div class="navbar">
         <ul class="nav">
-            <li class="home"><i class="icon fa fa-home fa-3x"></i><a href="#first"></a>
+            <li class="home"></i><a href="#first"><i class="icon fa fa-home fa-3x"></i></a>
             </li>
             <li id="onhoverhome">Home</li>
-            <li class="carousel"><i class="far fa-images fa-3x"></i><a href="#second"></a>
+            <li class="aboutme"><a href="#second"><i class="fas fa-user-graduate fa-3x"></i></a></li>
+            <li id="onhoverabout">About Me</li>
+            <li class="carousel"><a href="#third"><i class="far fa-images fa-3x"></i></a>
             </li>
             <li id="onhovercarousel">Carousel</li>
-            <li class="fcc"><i class="fas fa-campground fa-3x"></i><a href="#third"></a>
+            <li class="fcc"><a href="#fourth"><i class="fas fa-campground fa-3x"></i></a>
             </li>
             <li id="onhoverfcc">FCC</li>
-            <li class="codewars"><i class="fas fa-user-ninja fa-3x"></i><a href="#fourth"></a>
+            <li class="codewars"><a href="#fifth"><i class="fas fa-user-ninja fa-3x"></i></a>
             </li>
             <li id="onhovercodewars">Codewars</li>
+            <li class="github"><a href="https://github.com/boolean-n-bop/FAC-Website"><i class="fab fa-github fa-3x"></i></a>
+            </li>
+            <li id="onhovergit">GitHub</li>
         </ul>
     </div>
 
 <!-- Boxes -->
-    <div id="first" class="aboutme">
-        <h1>Take a seat and lettuce begin</h1>
+    <div id="first">
+        <h1>Welcome!</h1>
     </div>
 
     <div id="second">
-        <h1>Image Carousel</h1>
+        <!-- <h1>About Me</h1> -->
+        <div id="text1">
+            <a class="avatar">
+                <img style="width: 25em; border-radius: 50%" src="Images/arts.png">
+            </a>
+        </div>
     </div>
 
     <div id="third">
-        <h1>FreeCodeCamp</h1>
+        <h1>Carousel</h1>
     </div>
 
     <div id="fourth">
+        <h1>FreeCodeCamp</h1>
+    </div>
+    
+    <div id="fifth">
         <h1>CodeWars</h1>
     </div>
+
+
 
     </div>
 </body>
