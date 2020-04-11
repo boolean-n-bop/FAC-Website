@@ -1,169 +1,204 @@
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
-    background: #353434;
-    font-family: 'Merienda', cursive;
-    margin: 0;
-    padding: 0;
+  background: #353434;
+  font-family: "Merienda", cursive;
+  margin: 0;
+  padding: 0;
 }
 
 /* NAV */
 
 .navbar {
-    list-style-type: none;
-    margin: 0;
-    padding-top: 1%;
-    width: 8%;
-    background-color: transparent;
-    height: 100%; 
-    position: fixed;
-    overflow: auto; 
-  }
+  list-style-type: none;
+  margin: 0;
+  padding-top: 1%;
+  width: 8%;
+  background-color: transparent;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+}
 
 .nav li {
   color: rgba(70, 70, 88, 0.541);
 }
 
 ul li {
-    list-style-type: none;
-    padding-bottom: 37%;
+  list-style-type: none;
+  padding-bottom: 37%;
 }
 
 a {
-    color: darkgrey;
+  color: darkgrey;
+  list-style: none;
 }
 
+#fourth a {
+  color: red;
+  text-decoration: none;
+}
+
+#fifth a {
+  color: red;
+  text-decoration: none;
+}
 /* NAVBAR ICONS */
 
 #onhoverhome {
-    visibility: hidden;
+  visibility: hidden;
 }
-.home:hover ~ #onhoverhome{
-    visibility: visible;
-    color: red;
+.home:hover ~ #onhoverhome {
+  visibility: visible;
+  color: red;
 }
 
 #onhoverabout {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .aboutme:hover ~ #onhoverabout {
-    visibility: visible;
-    color: red;
+  visibility: visible;
+  color: red;
 }
 
 #onhovercarousel {
-    visibility: hidden;
+  visibility: hidden;
 }
-.carousel:hover ~ #onhovercarousel{
-    visibility: visible;
-    color: red;
+.carousel:hover ~ #onhovercarousel {
+  visibility: visible;
+  color: red;
 }
 
 #onhoverfcc {
-    visibility: hidden;
+  visibility: hidden;
 }
-.fcc:hover ~ #onhoverfcc{
-    visibility: visible;
-    color: red;
-    
+.fcc:hover ~ #onhoverfcc {
+  visibility: visible;
+  color: red;
 }
 
 #onhovercodewars {
-    visibility: hidden;
+  visibility: hidden;
 }
-.codewars:hover ~ #onhovercodewars{
-    visibility: visible;
-    color: red;
+.codewars:hover ~ #onhovercodewars {
+  visibility: visible;
+  color: red;
 }
 
 #onhovergit {
-    visibility: hidden;
+  visibility: hidden;
 }
 
-.github:hover ~ #onhovergit{
-    visibility: visible;
-    color: red;
+.github:hover ~ #onhovergit {
+  visibility: visible;
+  color: red;
 }
 
 /* TITLES */
 
-
+#first h1 {
+  position: absolute;
+  padding-left: 36%;
+  margin-top: 0;
+}
 
 h1 {
-    font-size: 50px;
-    vertical-align: middle;
-    padding-right: 10%;
-    text-align: center;
-    display: table-cell;
-    color: red;
-
+  font-size: 50px;
+  vertical-align: middle;
+  padding-right: 13%;
+  text-align: center;
+  display: table-cell;
+  color: red;
 }
 
 /* BOXES */
 
 #first {
-    padding-left: 6.5%;
-    padding-top: 50px;
-    height: 100vh;
-    width: 100%;
-    background-image: url(https://images.pexels.com/photos/3318582/pexels-photo-3318582.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: table;
-    text-align: center fixed;
-    background-attachment: fixed;
-
+  padding-left: 6.5%;
+  padding-top: 50px;
+  height: 100vh;
+  width: 100%;
+  /* background-image: url("https://images.pexels.com/photos/3317038/pexels-photo-3317038.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); */
+  background-image: url(https://images.pexels.com/photos/3318582/pexels-photo-3318582.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: table;
+  text-align: center fixed;
+  background-attachment: fixed;
 }
 
 #second {
-    padding-left: 6.5%;
-    height: 100vh;
-    width: 100%;
-    background-image: url("");
-    background-size: cover;
-    display: table;
-    background-attachment: fixed
+  padding-left: 30%;
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://images.pexels.com/photos/590697/pexels-photo-590697.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
 }
 
 #third {
-    padding-left: 6.5%;
-    height: 100vh;
-    width: 100%;
-    background-image: url("https://images.pexels.com/photos/842339/pexels-photo-842339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    background-size: cover;
-    display: table;
-    background-attachment: fixed
+  padding-left: 6.5%;
+  height: 100vh;
+  width: 100%;
+  /* background-image: url("https://images.pexels.com/photos/1102910/pexels-photo-1102910.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
+  background-image: url("https://images.pexels.com/photos/842339/pexels-photo-842339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
 }
 
 #fourth {
-    padding-left: 6.5%;
-    height: 100vh;
-    width: 100%;
-    background-image: url("https://images.pexels.com/photos/416202/pexels-photo-416202.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    background-size: cover;
-    display: table;
-    background-attachment: fixed
+  padding-left: 6.5%;
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://images.pexels.com/photos/167964/pexels-photo-167964.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
 }
-
 
 #fifth {
-    padding-left: 6.5%;
-    height: 100vh;
-    width: 100%;
-    background-image: url("https://images.pexels.com/photos/374918/pexels-photo-374918.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    background-size: cover;
-    display: table;
-    background-attachment: fixed
+  padding-left: 6.5%;
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://images.pexels.com/photos/301614/pexels-photo-301614.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
 }
 
-#text1 {
-    position: relative;
-    top: 50px;
-    padding-left: 8%;
-    padding-top: 8%;
-   /* padding-left: 10%; */
+/* Avatar */
+
+.avatar {
+  position: relative;
+  top: 50px;
+  padding-left: 8%;
+  padding-top: 5%;
+}
+
+/* About Me */
+
+p {
+  color: white;
+  text-align: center;
+  text-align: justify;
+  font-size: 15px;
+  max-width: 800px;
+  padding-top: 30;
+  position: relative;
+}
+
+.textbox {
+  background-color: transparent;
+  width: 500px;
+  border: 5px solid black;
+  padding: 50px;
+  margin: 20px;
+  margin-top: 0;
 }
