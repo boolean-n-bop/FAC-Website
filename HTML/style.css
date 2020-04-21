@@ -253,3 +253,53 @@ p {
   .third .textbox1 img {
     height: 20rem;
   }
+
+/* CONTROLS */
+
+.nextPrevBtn {
+    position: absolute;
+    z-index:2;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    margin-top: -20px;
+    color: white;
+    background-color: grey;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.rightArrow {
+  right:0;
+}
+
+
+.nextPrevBtn:hover {
+    background-color: orangered;
+}
+
+#playPause a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  top:20px;
+  position: absolute;
+  display: inline-block;
+  z-index: 5;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  cursor: pointer;
+  color: grey;
+  transition: 0.6s ease;
+}
+
+#play {
+  opacity: 0;
+}
+
+a:hover {
+  color: white;
+}
