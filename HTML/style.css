@@ -47,6 +47,7 @@ a {
   color: red;
   text-decoration: none;
 }
+
 /* NAVBAR ICONS */
 
 #onhoverhome {
@@ -55,6 +56,7 @@ a {
 .home:hover ~ #onhoverhome {
   visibility: visible;
   color: red;
+  font-size: 20px;
 }
 
 #onhoverabout {
@@ -64,6 +66,7 @@ a {
 .aboutme:hover ~ #onhoverabout {
   visibility: visible;
   color: red;
+  font-size: 20px;
 }
 
 #onhovercarousel {
@@ -72,6 +75,8 @@ a {
 .carousel:hover ~ #onhovercarousel {
   visibility: visible;
   color: red;
+  font-size: 20px;
+
 }
 
 #onhoverfcc {
@@ -80,6 +85,7 @@ a {
 .fcc:hover ~ #onhoverfcc {
   visibility: visible;
   color: red;
+  font-size: 20px;
 }
 
 #onhovercodewars {
@@ -88,6 +94,7 @@ a {
 .codewars:hover ~ #onhovercodewars {
   visibility: visible;
   color: red;
+  font-size: 20px;
 }
 
 #onhovergit {
@@ -97,6 +104,7 @@ a {
 .github:hover ~ #onhovergit {
   visibility: visible;
   color: red;
+  font-size: 20px;
 }
 
 /* TITLES */
@@ -104,7 +112,8 @@ a {
 #first h1 {
   position: absolute;
   padding-left: 36%;
-  margin-top: 0;
+  margin-top: -2%;
+
 }
 
 h1 {
@@ -173,7 +182,7 @@ h1 {
   background-attachment: fixed;
 }
 
-/* Avatar */
+/* AVATAR */
 
 .avatar {
   position: relative;
@@ -182,7 +191,7 @@ h1 {
   padding-top: 5%;
 }
 
-/* About Me */
+/* ABOUT ME */
 
 p {
   color: white;
@@ -202,3 +211,6 @@ p {
   margin: 20px;
   margin-top: 0;
 }
+
+/* CAROUSEL */
+
