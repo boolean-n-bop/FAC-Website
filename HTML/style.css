@@ -213,4 +213,43 @@ p {
 }
 
 /* CAROUSEL */
-
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .third .home .slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding: 0 15px;
+  }
+  
+  
+  .third .container {
+    max-width: 1170px;
+    margin: auto;
+  }
+  
+  .third .home .container {
+    flex-grow: 1;
+  }
+  
+  .third .textbox1 {
+    position: center;
+    background-color: grey;
+    width: 800px;
+    border: 5px solid black;
+    padding: 50px;
+    margin-left: 19%;
+    text-align: center;
+  }
+  
+  .third .textbox1 img {
+    height: 20rem;
+  }
