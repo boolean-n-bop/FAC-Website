@@ -216,13 +216,13 @@ p {
 /* CAROUSEL */
   
 .slide {
-    position: inherit;
+    position: relative;
     left: 0;
     top: 0%;
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: center;
+    background-position: cover;
     display: flex;
     padding: 0 15px;
     margin-right: 10%;
@@ -326,3 +326,27 @@ a:hover {
     from {margin-left: 100%;opacity: 1;}
     to {margin-left: 0%;opacity: 1;}
 }
+
+/* Move slides right */
+
+.moveRightCurrentSlide{
+    animation-name: moveRightCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+.moveRightPrevSlide{
+    animation-name: moveRightPrev;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+@keyframes moveRightCurrent {
+    from {margin-left: 0;opacity: 1;}
+    to {margin-left: 100%;opacity: 1;}
+}
+@keyframes moveRightPrev {
+    from {margin-left: -100%;opacity: 1;}
+    to {margin-left: 0%;opacity: 1;}
+}
+
