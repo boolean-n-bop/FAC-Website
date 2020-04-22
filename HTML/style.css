@@ -156,9 +156,10 @@ h1 {
   height: 100vh;
   width: 100%;
   /* background-image: url("https://images.pexels.com/photos/1102910/pexels-photo-1102910.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
-  background-image: url("https://images.pexels.com/photos/842339/pexels-photo-842339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  /* background-image: url("https://images.pexels.com/photos/842339/pexels-photo-842339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
+  background-color: grey;
   background-size: cover;
-  display: table;
+  display: block;
   background-attachment: fixed;
 }
 
@@ -214,33 +215,27 @@ p {
 
 /* CAROUSEL */
   
-  * {
-    box-sizing: border-box;
-  }
-  
-  .third .home .slide {
-    position: absolute;
+.slide {
+    position: inherit;
     left: 0;
-    top: 0;
+    top: 0%;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
     display: flex;
     padding: 0 15px;
+    margin-right: 10%;
   }
   
-  
-  .third .container {
+
+.container {
+    flex-grow: 1;
     max-width: 1170px;
     margin: auto;
   }
   
-  .third .home .container {
-    flex-grow: 1;
-  }
-  
-  .third .textbox1 {
+.textbox1 {
     position: center;
     background-color: grey;
     width: 800px;
@@ -250,32 +245,34 @@ p {
     text-align: center;
   }
   
-  .third .textbox1 img {
+.textbox1 img {
     height: 20rem;
   }
 
 /* CONTROLS */
 
+.arrows {
+    display: flex;
+    justify-content: left;
+
+}
+
+
 .nextPrevBtn {
-    position: absolute;
+    position: inherit;
     z-index:2;
     top: 50%;
     height: 40px;
-    width: 40px;
+    width: 60px;
     margin-top: -20px;
     color: white;
     background-color: grey;
     text-align: center;
     line-height: 40px;
-    font-size: 20px;
+    font-size: 30px;
     cursor: pointer;
     transition: all 1s ease;
 }
-
-.rightArrow {
-  right:0;
-}
-
 
 .nextPrevBtn:hover {
     background-color: orangered;
@@ -285,7 +282,7 @@ p {
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
   top:20px;
-  position: absolute;
+  position: relative;
   display: inline-block;
   z-index: 5;
   text-align: center;
@@ -302,4 +299,30 @@ p {
 
 a:hover {
   color: white;
+}
+
+/* ANIMATION */
+
+/* Moves slides left */
+
+.moveLeftCurrentSlide{
+    animation-name: moveLeftCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+
+}
+.moveLeftNextSlide{
+    animation-name: moveLeftNext;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+@keyframes moveLeftCurrent {
+    from {margin-left: 0;opacity: 1;}
+    to {margin-left: -100%;opacity: 1;}
+}
+@keyframes moveLeftNext {
+    from {margin-left: 100%;opacity: 1;}
+    to {margin-left: 0%;opacity: 1;}
 }

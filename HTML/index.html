@@ -75,8 +75,8 @@
     <!-- Carousel -->
 
     <div id="third">
-        <section>
-            <div class="home">
+
+         <div class="home">
                 <div class="slide" style="background-image: url('Images/carousel.jpg')">
                   <div class="container">
                       <div class="textbox1">
@@ -84,6 +84,7 @@
                       </div>
                   </div>
                 </div>
+                
       
                 <div class="slide moveRightCurrentSlide" style="background-image: url('Images/ocean.jpg')">
                   <div class="container">
@@ -100,21 +101,19 @@
                       <img src="https://i.pinimg.com/474x/5e/f9/1e/5ef91ec883c41d8c8d4a33da499e120d.jpg">
                     </div>
                 </div>
-                </div>
-              </div>  
-      
+            </div>
+
                 <!-- Controls -->
-      
+                <span class="arrows">
+                <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><a class="arrowLeft">&#10094;</a></div>
+                <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><a class="arrowRight">&#10095;</a></div>          
+                </span>
+
                 <div id="playPause" onclick="playPauseSlides()">
                   <div id="play"><a>PLAY</a></div>
                   <div id="pause"><a >PAUSE</a></div>
                 </div>
-                <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><a class="arrowLeft">&#10094;</a></div>
-                <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><a class="arrowRight">&#10095;</a></div>          
-             
-          </section>
-      
-
+        </div>
     </div>
 
     <!-- FreeCodeCamp -->
