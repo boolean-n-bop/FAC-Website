@@ -1,52 +1,62 @@
 // Carousel
- 
-var slideIndex,slides;
-function beginSlides(){
-  slideIndex=0;
-  slides=document.getElementsByClassName("slide");
-  slides[slideIndex].style.opacity=1;
-  
-  if(slides.length<2){
-        var nextPrevBtns=document.querySelector(".leftArrow,.rightArrow");
-        nextPrevBtns.style.display="none";
+
+var slideIndex, slides;
+function beginSlides() {
+    slideIndex = 0;
+    slides = document.getElementsByClassName("slide");
+    slides[slideIndex].style.opacity = 1;
+
+    if (slides.length < 2) {
+        var nextPrevBtns = document.querySelector(".leftArrow,.rightArrow");
+        nextPrevBtns.style.display = "none";
         for (i = 0; i < nextPrevBtn.length; i++) {
-            nextPrevBtn[i].style.display="none";
+            nextPrevBtn[i].style.display = "none";
         }
     }
 }
 
 beginSlides();
 
-function plusSlides(n){
-   moveSlide(slideIndex+n);
+function plusSlides(n) {
+    moveSlide(slideIndex + n);
 }
 
-function moveSlide(n){
-    var i,current,next;
-    var moveSlideAnimClass={
-          forCurrent:"",
-          forNext:""
+function moveSlide(n) {
+    var i, current, next;
+    var moveSlideAnimClass = {
+        forCurrent: "",
+        forNext: ""
     }
-    if(n>slideIndex) {
-        if(n >= slides.length){n=0}
-        moveSlideAnimClass.forCurrent="moveLeftCurrentSlide";
-        moveSlideAnimClass.forNext="moveLeftNextSlide";
-    }else if(n<slideIndex){
-        if(n<0){n=slides.length-1}
-        moveSlideAnimClass.forCurrent="moveRightCurrentSlide";
-        moveSlideAnimClass.forNext="moveRightPrevSlide";
+    if (n > slideIndex) {
+        if (n >= slides.length) { n = 0 }
+        moveSlideAnimClass.forCurrent = "moveLeftCurrentSlide";
+        moveSlideAnimClass.forNext = "moveLeftNextSlide";
+    } else if (n < slideIndex) {
+        if (n < 0) { n = slides.length - 1 }
+        moveSlideAnimClass.forCurrent = "moveRightCurrentSlide";
+        moveSlideAnimClass.forNext = "moveRightPrevSlide";
     }
-      if(n!=slideIndex){
+    if (n != slideIndex) {
         next = slides[n];
-        current=slides[slideIndex];
+        current = slides[slideIndex];
         for (i = 0; i < slides.length; i++) {
             slides[i].className = "slide";
-            slides[i].style.opacity=0;
+            slides[i].style.opacity = 0;
         }
         current.classList.add(moveSlideAnimClass.forCurrent);
         next.classList.add(moveSlideAnimClass.forNext);
-        slideIndex=n;
-       
+        slideIndex = n;
+
     }
-     
+
 }
+
+//event listener to enable keyboad navigation
+document.addEventListener("keydown", function (e) {
+    if (e.keyCode == '37') {
+        document.getElementsByClassName("arrowLeft")[0].click();
+    }
+    else if (e.keyCode == '39') {
+        document.getElementsByClassName("arrowRight")[0].click();
+    }
+});

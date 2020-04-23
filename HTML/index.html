@@ -10,7 +10,6 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
       <!-- Custom JS -->
-      <script src="app.js"></script>
     <title>FAC Application</title>
   </head>
 
@@ -41,8 +40,46 @@
     </div>
 
 <!-- Boxes -->
-    <div id="first">
-        <h1>Welcome!</h1>
+<div id="first">
+           <!-- Controls -->  
+            <div id="playPause" onclick="playPauseSlides()">
+              <div id="play"><a>PLAY</a></div>
+              <div id="pause"><a >PAUSE</a></div>
+            </div>  
+
+          <div class="arrows">
+          <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><a class="arrowLeft">&#10094;</a></div>
+          <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><a class="arrowRight">&#10095;</a></div>          
+        </div>
+
+      <div class="welcome">                   
+      <!-- Slides -->
+            <div class="slide" style="background-image: url('Images/carousel.jpg')">
+              <div class="container">
+                  <div class="textbox1">
+                    <p>Welcome</p>
+                  </div>
+              </div>
+            </div>
+            
+    
+            <div class="slide" style="background-image: url('Images/ocean.jpg')">
+              <div class="container">
+                  <div class="textbox1">
+                    <p>How you</p>
+                  </div>
+              </div>
+            </div>
+    
+            <div class="slide" style="background-image: url('https://images.pexels.com/photos/963278/pexels-photo-963278.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500')">
+              <div class="container">
+                <div class="textbox1">
+                  <p>Dooooin'?</p>
+                  <img src="https://i.pinimg.com/474x/5e/f9/1e/5ef91ec883c41d8c8d4a33da499e120d.jpg">
+                </div>
+               </div>
+            </div>
+    </div>
     </div>
 
 <!-- About Me -->
@@ -73,48 +110,10 @@
     </div>
 
     <!-- Carousel -->
-
-    <div id="third">
-
-         <div class="home">
-                <div class="slide" style="background-image: url('Images/carousel.jpg')">
-                  <div class="container">
-                      <div class="textbox1">
-                        <p>Hey</p>
-                      </div>
-                  </div>
-                </div>
-                
-      
-                <div class="slide moveRightCurrentSlide" style="background-image: url('Images/ocean.jpg')">
-                  <div class="container">
-                      <div class="textbox1">
-                        <p>How you</p>
-                      </div>
-                  </div>
-                </div>
-      
-                <div class="slide moveRightCurrentSlide" style="background-image: url('Images/image9.jpg');">
-                  <div class="container">
-                    <div class="textbox1">
-                      <p>dooooin'?</p>
-                      <img src="https://i.pinimg.com/474x/5e/f9/1e/5ef91ec883c41d8c8d4a33da499e120d.jpg">
-                    </div>
-                </div>
-            </div>
-
-                <!-- Controls -->
-                <span class="arrows">
-                <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><a class="arrowLeft">&#10094;</a></div>
-                <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><a class="arrowRight">&#10095;</a></div>          
-                </span>
-
-                <div id="playPause" onclick="playPauseSlides()">
-                  <div id="play"><a>PLAY</a></div>
-                  <div id="pause"><a >PAUSE</a></div>
-                </div>
-        </div>
-    </div>
+  
+  <div id="third">
+      <h1><a href="https://codepen.io/mel_kx/pen/NWGdxOR">Carousel</a></h1>
+   </div>
 
     <!-- FreeCodeCamp -->
 
@@ -129,13 +128,9 @@
         <h1><a href="https://www.codewars.com/users/meltem_ozz">CodeWars</a></h1>
     </div>
 
-    </div>
-
 </body>
 
-<script>
-
-</script>
+<script src="app.js"></script>
 
 </body>
 

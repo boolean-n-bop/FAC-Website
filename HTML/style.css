@@ -22,6 +22,7 @@ body {
   height: 100%;
   position: fixed;
   overflow: auto;
+  z-index: 5;
 }
 
 .nav li {
@@ -36,6 +37,11 @@ ul li {
 a {
   color: darkgrey;
   list-style: none;
+}
+
+#third a {
+    color: red;
+    text-decoration: none;  
 }
 
 #fourth a {
@@ -76,7 +82,6 @@ a {
   visibility: visible;
   color: red;
   font-size: 20px;
-
 }
 
 #onhoverfcc {
@@ -113,7 +118,6 @@ a {
   position: absolute;
   padding-left: 36%;
   margin-top: -2%;
-
 }
 
 h1 {
@@ -156,10 +160,10 @@ h1 {
   height: 100vh;
   width: 100%;
   /* background-image: url("https://images.pexels.com/photos/1102910/pexels-photo-1102910.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
-  /* background-image: url("https://images.pexels.com/photos/842339/pexels-photo-842339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
+  background-image: url("https://images.pexels.com/photos/842339/pexels-photo-842339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-color: grey;
   background-size: cover;
-  display: block;
+  display: table;
   background-attachment: fixed;
 }
 
@@ -214,42 +218,53 @@ p {
 }
 
 /* CAROUSEL */
-  
-.slide {
-    position: relative;
-    left: 0;
-    top: 0%;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: cover;
-    display: flex;
-    padding: 0 15px;
-    margin-right: 10%;
+
+.welcome .slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
   }
   
 
 .container {
-    flex-grow: 1;
-    max-width: 1170px;
-    margin: auto;
-  }
-  
-.textbox1 {
-    position: center;
-    background-color: grey;
-    width: 800px;
-    border: 5px solid black;
-    padding: 50px;
-    margin-left: 19%;
-    text-align: center;
-  }
-  
-.textbox1 img {
-    height: 20rem;
-  }
+  flex-grow: 1;
+  max-width: 1200px;
+  margin: auto;
+  margin-left: 18%;
+}
 
-/* CONTROLS */
+.home .container {
+  flex-grow: 1;
+}
+
+.textbox1 {
+  position: center;
+  display: table;
+  background-color: grey;
+  width: 600px;
+  border: 5px solid black;
+  border-radius: 4em;
+  padding: 10px;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+}
+
+.textbox1 p {
+    text-align: center;
+}
+
+.textbox1 img {
+  height: 20rem;
+  position: relative;
+}
+
+/* Controls */
 
 .arrows {
     display: flex;
@@ -259,39 +274,46 @@ p {
 
 
 .nextPrevBtn {
-    position: inherit;
-    z-index:2;
+    position: absolute;
+    z-index: 5;
     top: 50%;
     height: 40px;
-    width: 60px;
-    margin-top: -20px;
+    width: 40px;
     color: white;
     background-color: grey;
     text-align: center;
     line-height: 40px;
-    font-size: 30px;
+    font-size: 20px;
     cursor: pointer;
     transition: all 1s ease;
 }
 
 .nextPrevBtn:hover {
-    background-color: orangered;
+    background-color: red;
 }
 
+.arrowLeft {
+    position: absolute;
+}
+.rightArrow {
+    right:0;
+  }
+
 #playPause a{
+  position: absolute;
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
-  top:20px;
-  position: relative;
-  display: inline-block;
-  z-index: 5;
+  top: 10px;
+  z-index: 1;
   text-align: center;
   margin: auto;
+  margin-left: -4%;
   width: 100%;
   cursor: pointer;
-  color: grey;
+  color: white;
   transition: 0.6s ease;
 }
+
 
 #play {
   opacity: 0;
