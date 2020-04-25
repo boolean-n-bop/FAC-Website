@@ -136,7 +136,6 @@ h1 {
   padding-top: 50px;
   height: 100vh;
   width: 100%;
-  /* background-image: url("https://images.pexels.com/photos/3317038/pexels-photo-3317038.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); */
   background-image: url(https://images.pexels.com/photos/3318582/pexels-photo-3318582.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-size: cover;
   background-repeat: no-repeat;
@@ -159,7 +158,6 @@ h1 {
   padding-left: 6.5%;
   height: 100vh;
   width: 100%;
-  /* background-image: url("https://images.pexels.com/photos/1102910/pexels-photo-1102910.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
   background-image: url("https://images.pexels.com/photos/842339/pexels-photo-842339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-color: grey;
   background-size: cover;
@@ -260,16 +258,16 @@ p {
 }
 
 .textbox1 img {
-  height: 20rem;
+  height: 12rem;
   position: relative;
+  border-radius: 2rem;
 }
 
-/* Controls */
+/* CONTROLS */
 
 .arrows {
     display: flex;
     justify-content: left;
-
 }
 
 
@@ -292,11 +290,15 @@ p {
     background-color: red;
 }
 
-.arrowLeft {
+.leftArrow {
     position: absolute;
+    margin-left: 4%;
+    border-radius: 2rem;
 }
 .rightArrow {
+    margin-right: 9%;
     right:0;
+    border-radius: 2rem;
   }
 
 #playPause a{
@@ -325,7 +327,7 @@ a:hover {
 
 /* ANIMATION */
 
-/* Moves slides left */
+/* LEFT */
 
 .moveLeftCurrentSlide{
     animation-name: moveLeftCurrent;
@@ -349,7 +351,7 @@ a:hover {
     to {margin-left: 0%;opacity: 1;}
 }
 
-/* Move slides right */
+/* RIGHT */
 
 .moveRightCurrentSlide{
     animation-name: moveRightCurrent;

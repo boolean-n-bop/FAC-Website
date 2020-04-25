@@ -1,4 +1,4 @@
-// Carousel
+// MANUAL CAROUSEL
 
 var slideIndex, slides;
 function beginSlides() {
@@ -51,7 +51,32 @@ function moveSlide(n) {
 
 }
 
-//event listener to enable keyboad navigation
+//AUTOMATIC CAROUSEL
+
+var timer=null;
+function setTimer(){
+    timer=setInterval(function () {
+        plusSlides(1) ;
+    },3000);
+}
+setTimer();
+function playPauseSlides() {
+    var playBtn=document.getElementById("play");
+    var pauseBtn=document.getElementById("pause")
+    if(timer==null){
+        setTimer();
+        pauseBtn.style.opacity=1;
+        playBtn.style.opacity=0;
+    }else{
+        clearInterval(timer);
+        timer=null;
+        playBtn.style.opacity=1;
+        pauseBtn.style.opacity=0;
+    }
+}
+
+//EVENT LISTENER AND KEYBOARD NAVIGATION
+
 document.addEventListener("keydown", function (e) {
     if (e.keyCode == '37') {
         document.getElementsByClassName("arrowLeft")[0].click();
