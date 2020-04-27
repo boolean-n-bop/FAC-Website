@@ -402,7 +402,7 @@ a:hover {
 
 /* RESPONSIVE MEDIA QUERIES */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 699px) {
 
   /* NAVBAR */
   .navbar {
@@ -472,6 +472,76 @@ a:hover {
       border-radius: 25%;
       margin-left: -1.5%;
       margin-bottom: 5%;
+  }
+
+ #second, #third, #fourth, #fifth {
+      background-image: url("https://images.pexels.com/photos/36464/sky-clouds-clouds-form-cumulus-clouds.jpg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 992px) {
+
+ /* NAVBAR */
+ .navbar {
+    padding-top: 6%;
+    width: 20%;
+    background-color: transparent;
+    height: 100%;
+    z-index: 5;
+  }
+  
+  ul li {
+    padding-bottom: 20%;
+  }
+
+
+  /* CAROUSEL */
+
+  .textbox1 {
+    visibility: hidden;
+  }
+
+  .leftArrow {
+    position: absolute;
+    margin-left: 13%;
+  }
+
+  /* SECTIONS */
+
+  p {
+    color: white;
+    text-align: center;
+    font-size: 11px;
+    width: 300px;
+    height: 100px;
+    padding-top: -4%;
+    padding-bottom: -9%;
+    margin-left: 10%;
+    position: relative;
+  }
+
+  .textbox {
+    background-color: transparent;
+    width: 400px;
+    height: 530px;
+    padding: 2%;
+    margin-left: -1%;
+    margin-right: 20%;
+    margin-top: 0;
+    text-align: center;
+  
+  }
+   
+  h1 {
+      font-size: 35px;
+  }
+
+  #second img {
+      width: 16em;
+      border-radius: 25%;
+      margin-left: 1%;
+      margin-bottom: 3%;
   }
 
  #second, #third, #fourth, #fifth {
