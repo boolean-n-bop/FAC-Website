@@ -36,7 +36,7 @@ function moveSlide(n) {
         moveSlideAnimClass.forCurrent = "moveRightCurrentSlide";
         moveSlideAnimClass.forNext = "moveRightPrevSlide";
     }
-    if (n != slideIndex) {
+    if (n !== slideIndex) {
         next = slides[n];
         current = slides[slideIndex];
         for (i = 0; i < slides.length; i++) {
@@ -63,7 +63,7 @@ setTimer();
 function playPauseSlides() {
     var playBtn=document.getElementById("play");
     var pauseBtn=document.getElementById("pause")
-    if(timer==null){
+    if(timer===null){
         setTimer();
         pauseBtn.style.opacity=1;
         playBtn.style.opacity=0;

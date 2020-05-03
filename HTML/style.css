@@ -215,6 +215,8 @@ p {
   margin-top: 0;
 }
 
+/* -------------------------------------------- */
+
 /* CAROUSEL */
 
 .welcome .slide {
@@ -400,6 +402,8 @@ a:hover {
     border-radius: 40%;
 }
 
+/* -------------------------------------------- */
+
 /* RESPONSIVE MEDIA QUERIES */
 
 /* SMALL SCREENS */
@@ -480,6 +484,10 @@ a:hover {
       background-image: url("https://images.pexels.com/photos/36464/sky-clouds-clouds-form-cumulus-clouds.jpg?auto=compress&cs=tinysrgb&h=750&w=1260");
   }
 
+  #fifth a, #fourth a, #third a {
+    color: grey;
+}
+
 }
 
 /* MEDIUM SCREENS */
@@ -552,6 +560,10 @@ a:hover {
       background-image: url("https://images.pexels.com/photos/36464/sky-clouds-clouds-form-cumulus-clouds.jpg?auto=compress&cs=tinysrgb&h=750&w=1260");
   }
 
+#fifth a, #fourth a, #third a {
+    color: grey;
+}
+
 }
 
 /* LARGE SCREENS */
@@ -623,5 +635,9 @@ a:hover {
  #second, #third, #fourth, #fifth {
       background-image: url("https://images.pexels.com/photos/36464/sky-clouds-clouds-form-cumulus-clouds.jpg?auto=compress&cs=tinysrgb&h=750&w=1260");
   }
+
+  #fifth a, #fourth a, #third a {
+    color: grey;
+}
 
 }
