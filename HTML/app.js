@@ -85,3 +85,6 @@ document.addEventListener("keydown", function (e) {
         document.getElementsByClassName("arrowRight")[0].click();
     }
 });
+
+square = int(input("Enter Square Value: "))
+
